@@ -1,17 +1,17 @@
 
   import { defineConfig } from 'vite';
-  import react from '@vitejs/plugin-react-swc';
+  import react from '@vitejs/plugin-react';
   import path from 'path';
 
   export default defineConfig({
     plugins: [react()],
     base: './',
     build: {
-      outDir: 'dist',
+      outDir: 'build',
       assetsDir: 'assets',
       sourcemap: false,
       minify: 'terser',
-      target: 'es2018',
+      target: 'esnext',
     },
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
@@ -56,10 +56,6 @@
         '@radix-ui/react-accordion@1.2.3': '@radix-ui/react-accordion',
         '@': path.resolve(__dirname, './src'),
       },
-    },
-    build: {
-      target: 'esnext',
-      outDir: 'build',
     },
     server: {
       port: 3000,

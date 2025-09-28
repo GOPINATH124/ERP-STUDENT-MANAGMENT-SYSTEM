@@ -2,8 +2,8 @@ services:
   - type: web
     name: student-management-system
     env: node
-    buildCommand: npm ci && npm run build
-    startCommand: npm run start
+    buildCommand: npm install -g vite && npm ci && vite build
+    startCommand: vite preview --host
     envVars:
       - key: NODE_VERSION
         value: 16.20.2
@@ -11,3 +11,4 @@ services:
         value: 10000
       - key: NODE_ENV
         value: production
+    installCommand: npm install --legacy-peer-deps
