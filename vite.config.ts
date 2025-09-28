@@ -11,7 +11,12 @@
       assetsDir: 'assets',
       sourcemap: false,
       minify: 'terser',
-      target: 'esnext',
+      target: 'es2020',
+      rollupOptions: {
+        output: {
+          manualChunks: undefined
+        }
+      },
     },
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
