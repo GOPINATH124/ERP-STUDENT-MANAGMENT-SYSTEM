@@ -55,8 +55,8 @@
       },
       "scripts": {
             "dev": "vite",
-            "build": "./node_modules/.bin/vite build",
-            "start": "vite preview --host",
-            "preview": "vite preview"
+            "build": "npx vite build",
+            "start": "npx vite preview --host",
+            "preview": "npx vite preview"
       }
 }

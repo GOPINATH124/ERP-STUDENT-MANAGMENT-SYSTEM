@@ -6,6 +6,13 @@
   export default defineConfig({
     plugins: [react()],
     base: './',
+    build: {
+      outDir: 'dist',
+      assetsDir: 'assets',
+      sourcemap: false,
+      minify: 'terser',
+      target: 'es2018',
+    },
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
