@@ -1,0 +1,11 @@
+
+  # Integrated Student Management System
+
+  This is a code bundle for Integrated Student Management System. The original project is available at https://www.figma.com/design/COedzLqrB0NCn9qwq8Wu9Z/Integrated-Student-Management-System.
+
+  ## Running the code
+
+  Run `npm i` to install the dependencies.
+
+  Run `npm run dev` to start the development server.
+  
