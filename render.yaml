@@ -2,8 +2,10 @@ services:
   - type: web
     name: student-management-system
     env: node
-    buildCommand: npm install && npm run build
-    startCommand: npm run preview
+    buildCommand: npm install && chmod +x ./node_modules/.bin/vite && npm run build
+    startCommand: npm run start
     envVars:
       - key: NODE_VERSION
         value: 18
+      - key: PORT
+        value: 10000
